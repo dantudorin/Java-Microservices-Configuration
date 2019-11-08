@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
         <module name="client1" />
         <module name="client2" />
         <module name="cloud-eureka" />
+        <module name="config-server" />
         <module name="micros" />
+        <module name="zuul-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="cloud-eureka" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="micros" target="1.8" />
+      <module name="zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="cloud-eureka" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="micros" options="-parameters" />
+      <module name="zuul-gateway" options="-parameters" />
     </option>
   </component>
 </project>
